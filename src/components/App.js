@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from 'assets/logo.svg'
+import 'styles/App.css'
+import { deviceTypeIIFE } from 'helpers/deviceData'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +18,20 @@ function App() {
         >
           Learn React
         </a>
+        <ul style={{ listStyleType: "none" }}>
+          <li>
+            {deviceTypeIIFE}
+          </li>
+          <li>
+            use agent
+          </li>
+          <li>
+            {navigator.userAgent}
+          </li>
+        </ul>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
