@@ -3,14 +3,15 @@ import { Container, Row, Col } from 'react-bootstrap'
 import ProjectCard from './ProjectCards'
 import Particle from '../Particle'
 import ibmaichatbot from '../../assets/Projects/ibmaichatbot.png'
-import muskegonmuseum from '../../assets/Projects/muskegonmuseum.jpeg'
+import muskegonmuseum from '../../assets/Projects/muskegonmuseum.jpg'
 import portfolio from '../../assets/Projects/portfolio.png'
 import keymaster from '../../assets/Projects/keymaster.png'
-import ghpvt from '../../assets/Projects/ghpvt.png'
-import cth from '../../assets/Projects/cth.png'
+import ghpvt from '../../assets/Projects/ghpvt.jpg'
+import cth from '../../assets/Projects/cth.jpg'
 import chesscreator from '../../assets/Projects/chesscreator.png'
 import shrs from '../../assets/Projects/shrs.png'
-import metrogame from '../../assets/Projects/metrogame.png'
+import metrogame from '../../assets/Projects/metrogame.jpg'
+import jaqamaz from '../../assets/Projects/jaqamaz.jpg'
 
 const Projects = () => {
   return (
@@ -24,6 +25,16 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jaqamaz}
+              isBlog={false}
+              title=""
+              description="Jaqâmaz is an acoustic live music band composed of 5 musicians mixing arabic music and Jazz. This website was ordered by one of the musicians in the hopes of increasing their online presence."
+              demoLink="https://jaqamaz.com"
+              ghLink="https://github.com/Austinae/jaqamaz.com"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={metrogame}
