@@ -19,13 +19,15 @@ const ProjectCards = ({ description, imgPath, isBlog, demoLink, title, ghLink, p
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>
-        <Button variant={privateRepo ? "danger" : "primary"} disabled={privateRepo} href={ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {getButtonText()}
-        </Button>
+        {ghLink && 
+          <Button variant={privateRepo ? "danger" : "primary"} disabled={privateRepo} href={ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {getButtonText()}
+          </Button>
+        }
         {"\n"}
         {"\n"}
-        {!isBlog && demoLink && (
+        {demoLink && (
           <Button
             variant="primary"
             href={demoLink}

@@ -13,6 +13,7 @@ import {
   AiFillTool,
 } from 'react-icons/ai'
 import { CgFileDocument } from 'react-icons/cg'
+import { TbWriting } from 'react-icons/tb'
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState(false)
@@ -58,13 +59,12 @@ const NavBar = () => {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+              <a
+                className="nav-link"
+                href="http://guerrandproject.com"
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+                <TbWriting style={{ marginBottom: "2px" }} /> Blog
+              </a>
             </Nav.Item>
 
             <Nav.Item>

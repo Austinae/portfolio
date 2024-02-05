@@ -12,6 +12,7 @@ import chesscreator from '../../assets/Projects/chesscreator.png'
 import shrs from '../../assets/Projects/shrs.png'
 import metrogame from '../../assets/Projects/metrogame.jpg'
 import jaqamaz from '../../assets/Projects/jaqamaz.jpg'
+import guerrandproject from '../../assets/Projects/guerrandproject.png'
 
 const Projects = () => {
   return (
@@ -25,27 +26,36 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
+            <ProjectCard
+              imgPath={guerrandproject}
+              isBlog={true}
+              title="G(uer)rand Project"
+              description="G(uer)rand Project is a blog. The purpose of this is simple: to deliver concise, no-nonsense articles that cut through the clutter, providing a direct path to knowledge. Imagine a community where individuals, driven by a passion for learning, share their insights and discoveries. As we document our understanding, we collectively contribute to a pool of knowledge, fostering an environment where we all grow together."
+              demoLink="https://guerrandproject.com/"
+            />
+          </Col>
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={jaqamaz}
               isBlog={false}
-              title=""
+              title="Jaqamaz"
               description="Jaqâmaz is an acoustic live music band composed of 5 musicians mixing arabic music and Jazz. This website was ordered by one of the musicians in the hopes of increasing their online presence."
               demoLink="https://jaqamaz.com"
               ghLink="https://github.com/Austinae/jaqamaz.com"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={metrogame}
               isBlog={false}
-              title=""
+              title="MetroGame"
               description="MetroGame is an engaging mobile app designed to test your familiarity with global subway stations. Built with React Native, the app challenges users to pinpoint subway locations on a map—the closer you are, the more points you score! This playful yet educational app demonstrates the versatility of React Native in creating interactive user experiences."
               demoLink="https://apps.apple.com/us/app/metrogame-subway-game/id6449089401/"
               ghLink="https://github.com/Austinae/metrogame"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={ghpvt}
               isBlog={false}
@@ -55,7 +65,7 @@ const Projects = () => {
               demoLink="https://github.com/Austinae"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={cth}
               isBlog={false}
@@ -65,7 +75,7 @@ const Projects = () => {
               ghLink="https://github.com/Austinae/CTH"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={keymaster}
               isBlog={false}
@@ -74,7 +84,7 @@ const Projects = () => {
               ghLink="https://github.com/Austinae/keymaster"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={muskegonmuseum}
               isBlog={false}
@@ -83,7 +93,7 @@ const Projects = () => {
               privateRepo={true}
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={chesscreator}
               isBlog={false}
@@ -92,7 +102,7 @@ const Projects = () => {
               ghLink="https://github.com/Austinae/chesscreator"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={portfolio}
               isBlog={false}
@@ -101,7 +111,7 @@ const Projects = () => {
               ghLink="https://github.com/Austinae/portfolio"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={ibmaichatbot}
               isBlog={false}
@@ -110,7 +120,7 @@ const Projects = () => {
               privateRepo={true}
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={shrs}
               isBlog={false}

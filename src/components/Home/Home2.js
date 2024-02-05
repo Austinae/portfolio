@@ -13,31 +13,26 @@ const Home2 = () => {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <div className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
-              I was typing on a computer before I could properly write. Cliché, yes, truth, also.
-              <br />
-              <br />I write code for fun and professionally.
-              <br />
-              <br />
-              <b className="blue"> Python, JS & C++ </b> are my jam, but don't spread the word.
-              <br />
-              <br />My aim is to
-              <b className="blue"> build new technologies </b>
-              for a sustainable future.
-              <br />
-              <br />
-              Be the change you want to see in the world.
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid framed" alt="avatar" />
-            </Tilt>
-          </Col>
+            <div md={4} className="myAvtar">
+              <Tilt>
+                <img src={myImg} className="img-fluid framed" alt="avatar" />
+              </Tilt>
+            </div>
+            <div className="introduction-text">
+              <p className="home-about-body">Raised in France, I graduated from a <span className="blue"> bilingual</span> school with an OIB-British section Baccalaureate and earned a <span className="blue"> Computer Science degree</span> with high honors in the UK in 2021.</p>
+              <p className="home-about-body">I've always been interested in computers and I learned to type on a keyboard before I could properly write.</p>
+              <p className="home-about-body">My aim is to<b className="blue"> build new technologies </b>for a sustainable future.</p>
+              <p className="home-about-body">On top of my studies, I worked on projects like Musion, Treeco, and the IBM AI Academic Initiative to further my skills. </p>
+              <p className="home-about-body">After completing my studies, I had the option to continue in academia or start working. Because I had such rewarding experiences collaborating with professional engineers, I chose to enter the workforce to further my practical learning.</p>
+              <p className="home-about-body">Since graduating, I've worked as a Freelancer and a Full-Time engineer, specializing in roles ranging from Web Development at CTH and to AI NLP Engineering at Storya and Full Stack Engineering at talent.io.</p>
+              <p className="home-about-body"><b className="blue"> I uphold high standards of quality and meticulous attention to detail</b> in my work, aiming to drive meaningful impact within any organization I join.</p>
+              <p className="home-about-body">Be the change you want to see in the world.</p>
+            </div>
+          </div>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
