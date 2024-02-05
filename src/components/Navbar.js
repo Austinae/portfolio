@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import { CgGitFork } from 'react-icons/cg'
 import {
   AiFillStar,
-  AiOutlineUser,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiFillTool,

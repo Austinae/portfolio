@@ -1,34 +1,20 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { CgCPlusPlus } from 'react-icons/cg'
 import {
-	DiJavascript1,
 	DiNodejs,
-	DiMongodb,
 	DiPython,
-	DiJava,
-	DiHtml5,
-	DiCss3,
-	DiBootstrap,
 	DiReact,
-	DiJqueryLogo,
-	DiMysql,
 } from 'react-icons/di'
 import {
 	SiRedis,
 	SiRubyonrails,
 	SiPostgresql,
-	SiExpress,
-	SiKotlin,
-	SiFlask,
 	SiTensorflow,
-	SiHeroku,
 	SiGit,
 	SiDocker,
 	SiGnubash,
 	SiVim,
 } from 'react-icons/si'
-import { TbBrandReactNative } from 'react-icons/tb'
 
 const Techstack = () =>  {
 	return (
