@@ -13,6 +13,7 @@ import shrs from '../../assets/Projects/shrs.png'
 import metrogame from '../../assets/Projects/metrogame.jpg'
 import jaqamaz from '../../assets/Projects/jaqamaz.jpg'
 import guerrandproject from '../../assets/Projects/guerrandproject.png'
+import ext2term from '../../assets/Projects/ext2term.png'
 
 const Projects = () => {
   return (
@@ -26,6 +27,16 @@ const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col lg={4} md={6} className="project-card">
+            <ProjectCard
+              imgPath={ext2term}
+              isBlog={false}
+              title="ext2term"
+              description="ext2term is a Python CLI tool and library designed to help users learn about the ext2 file system. It simulates a terminal environment, allowing users to interact with the ext2 file system without the need to mount it on their system."
+              demoLink="https://pypi.org/project/ext2term/"
+              ghLink="https://github.com/Austinae/ext2term"
+            />
+          </Col>
           <Col lg={4} md={6} className="project-card">
             <ProjectCard
               imgPath={guerrandproject}
