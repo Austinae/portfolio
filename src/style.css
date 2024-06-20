@@ -221,6 +221,13 @@ button:focus {
   box-shadow:
     -50px -50px 0 -40px var(--imp-text-color),
     50px 50px 0 -40px var(--imp-text-color);
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+  .framed {
+    margin: 0;
+  }
 }
 
 @keyframes wave-animation {
@@ -341,7 +348,7 @@ button:focus {
 
 .home-about-body {
   padding-top: 0px;
-  font-size: 1.2em !important;
+  font-size: 1.0em !important;
   text-align: left;
 }
 
