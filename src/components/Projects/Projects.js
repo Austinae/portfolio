@@ -2,18 +2,19 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import ProjectCard from './ProjectCards'
 import Particle from '../Particle'
-import ibmaichatbot from '../../assets/Projects/ibmaichatbot.png'
-import muskegonmuseum from '../../assets/Projects/muskegonmuseum.jpg'
-import portfolio from '../../assets/Projects/portfolio.png'
-import keymaster from '../../assets/Projects/keymaster.png'
-import ghpvt from '../../assets/Projects/ghpvt.jpg'
-import cth from '../../assets/Projects/cth.jpg'
-import chesscreator from '../../assets/Projects/chesscreator.png'
-import shrs from '../../assets/Projects/shrs.png'
-import metrogame from '../../assets/Projects/metrogame.jpg'
-import jaqamaz from '../../assets/Projects/jaqamaz.jpg'
-import guerrandproject from '../../assets/Projects/guerrandproject.png'
-import ext2term from '../../assets/Projects/ext2term.png'
+import ibmaichatbot from '../../assets/Projects/min/ibmaichatbot.png'
+import muskegonmuseum from '../../assets/Projects/min/muskegonmuseum.jpg'
+import portfolio from '../../assets/Projects/min/portfolio.png'
+import keymaster from '../../assets/Projects/min/keymaster.png'
+import ghpvt from '../../assets/Projects/min/ghpvt.jpg'
+import cth from '../../assets/Projects/min/cth.png'
+import chesscreator from '../../assets/Projects/min/chesscreator.png'
+import shrs from '../../assets/Projects/min/shrs.png'
+import metrogame from '../../assets/Projects/min/metrogame.jpg'
+import jaqamaz from '../../assets/Projects/min/jaqamaz.jpg'
+import guerrandproject from '../../assets/Projects/min/guerrandproject.png'
+import ext2term from '../../assets/Projects/min/ext2term.png'
+import confidence from '../../assets/Projects/min/confidence.png'
 
 const Projects = () => {
   return (
@@ -29,12 +30,30 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col lg={4} md={6} className="project-card">
             <ProjectCard
+              imgPath={confidence}
+              isBlog={false}
+              title="confidencetodate"
+              description="Built a website for a date coaching business."
+              demoLink="https://confidencetodateagain.com/"
+            />
+          </Col>
+          <Col lg={4} md={6} className="project-card">
+            <ProjectCard
               imgPath={ext2term}
               isBlog={false}
               title="ext2term"
               description="ext2term is a Python CLI tool and library designed to help users learn about the ext2 file system. It simulates a terminal environment, allowing users to interact with the ext2 file system without the need to mount it on their system."
               demoLink="https://pypi.org/project/ext2term/"
               ghLink="https://github.com/Austinae/ext2term"
+            />
+          </Col>
+          <Col lg={4} md={6} className="project-card">
+            <ProjectCard
+              imgPath={cth}
+              isBlog={false}
+              title="CTH"
+              description="Lead developer, tailored website for a textile business owner. The site offers a user-friendly experience while showcasing the client's textile products."
+              demoLink="https://confectiontextilehotelier.com/"
             />
           </Col>
           <Col lg={4} md={6} className="project-card">
@@ -74,16 +93,6 @@ const Projects = () => {
               description="Implemenation of an API with NodeJS. Customization is possible. Serves SVG which displays the amount of users which have visited your GitHub profile. PostgreSQL is used."
               ghLink="https://github.com/Austinae/github-profile-views-tracker"
               demoLink="https://github.com/Austinae"
-            />
-          </Col>
-          <Col lg={4} md={6} className="project-card">
-            <ProjectCard
-              imgPath={cth}
-              isBlog={false}
-              title="CTH"
-              description="As a solo developer, I built a tailored website for a textile business owner using HTML, JavaScript, and CSS. Deployed on Bluehost and managed via phpMyAdmin, the site offers a user-friendly experience while showcasing the client's textile products."
-              demoLink="https://confectiontextilehotelier.com/"
-              ghLink="https://github.com/Austinae/CTH"
             />
           </Col>
           <Col lg={4} md={6} className="project-card">

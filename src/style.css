@@ -476,7 +476,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #00BFFF9E !important;
+  box-shadow: 0 0px 1px 0px #00BFFF9E !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
